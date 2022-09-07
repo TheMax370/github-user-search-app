@@ -46,7 +46,7 @@ darkMode.addEventListener('click', event => {
 		document.getElementById('text-dark').innerHTML = 'LIGHT';
 		
 	} else {
-		document.getElementById('css').setAttribute('href', "style.css");
+		document.getElementById('css').setAttribute('href', "/css/style.css");
 		document.getElementById('text-dark').innerHTML = 'DARK';
 	}
 
