@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F8FF;
+    row-gap: 30px;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    height: 38px;
+}
+
+header h1 {
+    font-family: 'Space Mono', monospace;
+    font-style: bold;
+    font-size: 26px;
+    line-height: 39px;
+    color: #222731;
+}
+
+header button {
+    width: 78px;
+    height: 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-style: bold;
+    line-height: 19px;
+    text-align: right;
+    color: #697C9A;
+    border: none;
+    background-color: transparent;
+}
+
+header button:hover {
+    cursor: pointer;
+    color: #222731;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.searchbar {
+    width: 730px;
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar:hover {
+    cursor: pointer;
+}
+
+.searchbar-leftside {
+    width: 302px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.searchbar-leftside input {
+    width: 254px;
+    height: 25px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222731;
+    border: none;
+    caret-color: #0079FF;
+}
+
+.searchbar-leftside input:focus {
+    outline: none;
+}
+
+.searchbar-rightside {
+    width: 222px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 15px;
+    padding-right: 1rem;
+}
+
+.searchbar-rightside h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #F74646;
+    display: none;
+}
+
+.searchbar-rightside button {
+    width: 106px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0079FF;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.searchbar-rightside button:hover {
+    background-color: #60ABFF;
+    cursor: pointer;
+} 
+
+.user-card {
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    height: 444px;
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    column-gap: 25px;
+    filter: drop-shadow(0px 16px 30px rgba(70, 96, 187, 0.1986));
+}
+
+.user-pp {
+    width: 117px;
+    height: 117px;
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.user-pp img {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.user-name-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+}
+
+.user-name-date h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #2B3442;
+    margin: 0;
+}
+
+.user-name-date h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #697C9A;
+    margin: 0;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #0079FF;
+    margin: 0;
+}
+
+.user-bio {
+    width: 480px;
+}
+
+.user-bio h4 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #4B6A9B;
+    opacity: 75%;
+}
+
+.user-link-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 480px;
+    height: 215px;
+}
+
+.user-follows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 480px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #F6F8FF;
+}
+
+.user-repos {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-followers {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-following {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-follows h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4B6A9B;
+    margin-top: 0;
+}
+
+.user-follows h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #2B3442;
+    margin-top: 0;
+}
+
+.user-links {
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: auto;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.user-links p {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #4B6A9B;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.user-links a {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #4B6A9B;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.user-links span {
+    padding-left: 8px;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 517px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 327px;
+    }
+
+    main {
+        width: 327px;
+    }
+
+    .searchbar {
+        width: 327px;
+        
+    }
+
+    .searchbar-leftside {
+        padding-left: 0.8rem;
+    }
+
+    .searchbar-leftside input {
+        width: 184px;
+        font-size: 13px;
+        padding-right: 0.8rem;
+        padding-left: 0.5rem;
+    }
+
+    .searchbar-rightside button {
+        width: 84px;
+        height: 46px;
+        font-size: 14px;
+    } 
+
+    .user-card {
+        width: 327px;
+    }
+
+    .user-bio h4 {
+        margin-top: 0;
+    }
+
+    .user-pp img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .user-follows {
+        width: 279px;
+        margin-left: -7.1rem;
+    }
+
+    .user-name-date {
+        width: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-name-date h1 {
+        font-size: 16px;
+    }
+
+    .user-name-date h2 {
+        font-size: 13px;
+    }
+
+    .user-bio {
+        width: 200px;
+    }
+
+    .user-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        width: 185px;
+        height: 127px;
+        row-gap: 10px;
+        margin-left: -6.5rem;
+    }
+
+    .user-links p {
+        overflow: visible;
+        white-space: none;
+        text-overflow: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+
+}

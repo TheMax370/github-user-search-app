@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css" id="css">
+  <script src="https://kit.fontawesome.com/108c597d18.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <title>GitHub user search app</title>
+</head>
+
+<body>
+  <header>
+    <h1>devfinder</h1>
+    <button id="dark-mode"><span id="text-dark">DARK</span> <i class="fa-solid fa-moon" id="btn-icon"></i></button>
+  </header>
+  <main>
+    <section class="searchbar">
+      <div class="searchbar-leftside">
+        <img src="./assets/icon-search.svg" alt="search">
+        <input type="text" name="search-username" id="search-username" placeholder="Search GitHub username…">
+      </div>
+      <div class="searchbar-rightside">
+        <h1 id="not-found">No results</h1>
+        <button id="search-button">Search</button>
+      </div>
+    </section>
+    <section class="user-card">
+      <div class="user-pp">
+        <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="profile picture" id="profile-picture">
+      </div>
+      <div class="user-info">
+        <div class="user-name-date">
+          <h1 id="name">The Octocat</h1>
+          <h2 id="date">Joined 25 Jan 2011</h2>
+        </div>
+        <div class="user-name">
+          <h3 id="username">@octocat</h3>
+        </div>
+        <div class="user-bio">
+          <h4 id="bio">This profile has no bio</h4>
+        </div>
+        <div class="user-link-info">
+          <div class="user-follows">
+            <div class="user-repos">
+              <h1>Repos</h1>
+              <h2 id="repos">8</h2>
+            </div>
+            <div class="user-followers">
+              <h1>Followers</h1>
+              <h2 id="followers">3938</h2>
+            </div>
+            <div class="user-following">
+              <h1>Following</h1>
+              <h2 id="followings">9</h2>
+            </div>
+          </div>
+          <div class="user-links">
+            <p> <i class="fa-solid fa-location-dot"></i><span id="location">San Francisco</span></p>
+            <p> <i class="fa-brands fa-twitter"></i><span id="twitter">Not available</span></p>
+            <p> <i class="fa-solid fa-link"></i><span id="website"><a href="" id="link">https://github.blog</a></span></p>
+            <p> <i class="fa-solid fa-building"></i><span id="company">@github</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141D2F;
+    row-gap: 30px;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    height: 38px;
+}
+
+header h1 {
+    font-family: 'Space Mono', monospace;
+    font-style: bold;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+header button {
+    width: 78px;
+    height: 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-style: bold;
+    line-height: 19px;
+    text-align: right;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+
+header button:hover {
+    cursor: pointer;
+    color: #90A4D4;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.searchbar {
+    width: 730px;
+    height: 69px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E2A47;
+    border-radius: 15px;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+}
+
+.searchbar:hover {
+    cursor: pointer;
+}
+
+.searchbar-leftside {
+    width: 302px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.searchbar-leftside input {
+    width: 254px;
+    height: 25px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    background-color: #1E2A47;
+    border: none;
+    caret-color: #0079FF;
+}
+
+.searchbar-leftside input:focus {
+    outline: none;
+}
+
+.searchbar-rightside {
+    width: 222px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 15px;
+    padding-right: 1rem;
+}
+
+.searchbar-rightside h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #F74646;
+    display: none;
+}
+
+.searchbar-rightside button {
+    width: 106px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0079FF;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.searchbar-rightside button:hover {
+    background-color: #60ABFF;
+    cursor: pointer;
+} 
+
+.user-card {
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    height: 444px;
+    background-color: #1E2A47;
+    border-radius: 15px;
+    column-gap: 25px;
+}
+
+.user-pp {
+    width: 117px;
+    height: 117px;
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.user-pp img {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.user-name-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+}
+
+.user-name-date h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.user-name-date h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #0079FF;
+    margin: 0;
+}
+
+.user-bio {
+    width: 480px;
+}
+
+.user-bio h4 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 75%;
+}
+
+.user-link-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 480px;
+    height: 215px;
+}
+
+.user-follows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 480px;
+    height: 85px;
+    border-radius: 10px;
+    background-color: #141D2F;
+}
+
+.user-repos {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-followers {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-following {
+    display: flex;
+    flex-direction: column;
+    height: 53px;
+}
+
+.user-follows h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.user-follows h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.user-links {
+    display: grid;
+    justify-content: space-evenly;
+    margin-top: auto;
+    grid-template-columns: auto auto;
+
+    width: 100%;
+}
+
+.user-links p {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.user-links a {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.user-links span {
+    padding-left: 8px;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+i {
+    font-size: 1.2rem;
+}
