@@ -42,11 +42,11 @@ darkMode.addEventListener('click', event => {
 		document.getElementsByTagName('h2')[1].style.color = 'white';
 		document.getElementsByTagName('h2')[2].style.color = 'white';
 		document.getElementsByTagName('h2')[3].style.color = 'white';*/
-		document.getElementById('css').setAttribute('href', "/css/dark-mode.css");
+		document.getElementById('css').setAttribute('href', "css/dark-mode.css");
 		document.getElementById('text-dark').innerHTML = 'LIGHT';
 		
 	} else {
-		document.getElementById('css').setAttribute('href', "/css/style.css");
+		document.getElementById('css').setAttribute('href', "css/style.css");
 		document.getElementById('text-dark').innerHTML = 'DARK';
 	}
 
